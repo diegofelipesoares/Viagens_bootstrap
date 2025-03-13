@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajantes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+    
+        <!-- Menu de navegação -->
+    <header id="cabecalho">
+        <div class="navbar">
+            <h1>Viagens</h1>
+            <nav>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cards">Locais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#FAQ">FAQ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Iniciando Carousel -->
+        <div data-bs-spy="scroll" data-bs-target="cabecalho">
+            <section id="inicio">
+                <div class="carousel carousel-fade slide mb-4"
+                id="carousel-landscapes" 
+                data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- incluindo imagem 1 -->
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="d-block w-100 fixed-height" src="./img/Carousel/Florence.jpg">
+                            <div class="carousel-caption">
+                                <h2>Florence</h2>
+                            </div>
+                        </div>
+                        <!-- Incluindo imagem 2 -->
+                        <div data-bs-interval="1000" class="carousel-item">
+                            <img class="d-block w-100 fixed-height" src="./img/Carousel/New York.jpg">
+                            <div class="carousel-caption">
+                                <h2>New York</h2>
+                            </div>
+                        </div>
+                        <!-- Incluindo imagem 3 -->
+                        <div data-bs-interval="1000" class="carousel-item">
+                            <img class="d-block w-100 fixed-height" src="./img/Carousel/Suiça.webp">
+                            <div class="carousel-caption">
+                                <h2>Swiss</h2>
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- Botões para passar e voltar imagens -->
+                    <button data-bs-target="#carousel-landscapes" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-landscapes" data-bs-slide="next" class="carousel-control-next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <!-- Linhas para indicar e controlar as imagens -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-landscapes" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-landscapes" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-landscapes" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </section>
+            <!-- Fim do Carousel -->
+            <!-- Iniciando Cards -->
+            <section id="cards">
+                <div class="row mb-3">
+                    <div class="mb-3 col-xxl-12 col-xl-12 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <!-- Card 1 -->
+                        <div class="card h-100">
+                            <!-- Cabeçalho do card -->
+                            <div class="card-header">
+                                Destino inesquecível
+                            </div>
+                            <img src="./img/Cards/Paris.jpeg">
+                            <!-- Corpo do card -->
+                            <div class="card-body">
+                                <h4 class="card-title"> París</h4>
+                                <h5 class="card-subtitle fst-italic pb-2"> A mais visitada do mundo.</h5>
+                                <p class="card-text"> Paris, a capital da França, é uma das cidades mais icônicas do mundo, conhecida por sua arquitetura deslumbrante, gastronomia refinada e rica história cultural. Entre seus marcos mais famosos estão a Torre Eiffel, o Museu do Louvre e a Catedral de Notre-Dame.</p>
+                            </div>
+                        </div> <!-- Fim Card 1 -->
+                    </div>
+                    <div class=" mb-3 col-xxl-12 col-xl-12 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <!-- Card 2 -->
+                        <div class="card h-100">
+                            <!-- Cabeçalho do card -->
+                            <div class="card-header">
+                                Um lugar de paz
+                            </div>
+                            <img src="./img/Cards/Suiça.jpeg">
+                            <!-- Corpo do card -->
+                            <div class="card-body">
+                                <h4 class="card-title"> Suíça</h4>
+                                <h5 class="card-subtitle fst-italic pb-2"> Vistas encantadoras.</h5>
+                                <p class="card-text"> A Suíça é um país europeu conhecido por suas paisagens deslumbrantes, montanhas cobertas de neve e lagos cristalinos. Lar dos Alpes, é um destino perfeito para amantes da natureza e esportes de inverno, com estações de esqui renomadas como Zermatt e St. Moritz.</p>
+                            </div>
+                        </div> <!-- Fim Card 2 -->
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="mb-3 col-xxl-12 col-xl-12 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="card h-100">
+                            <!-- Cabeçalho do card -->
+                            <div class="card-header">
+                                Encantadora
+                            </div>
+                            <img src="./img/Cards/Veneza.jpeg">
+                            <!-- Corpo do card -->
+                            <div class="card-body">
+                                <h4 class="card-title"> Veneza </h4>
+                                <h5 class="card-subtitle fst-italic pb-2"> Romântica e Única.</h5>
+                                <p class="card-text"> Veneza, localizada no nordeste da Itália, é famosa por seus canais, arquitetura histórica e atmosfera romântica. Construída sobre mais de 100 ilhas, a cidade é conectada por pontes e cortada por gôndolas que navegam pelo Grande Canal.</p>
+                            </div>
+                        </div> <!-- Fim Card 3 -->
+                    </div>
+                </div> <!-- Fim da class row -->
+            </section>
+            <!-- Fim dos Cards -->
+            <!-- Iniciando Accordion -->
+            <section id="FAQ">
+                <div class="accordion mb-4">
+                    <!-- Pergunta 1 -->
+                    <div class="accordion-item mb-2">
+                        <button class="accordion-button" data-bs-toggle="collapse"
+                        data-bs-target="#resposta1">
+                            Qual a melhor época para viajar?
+                        </button>
+                    </div>
+                    <div id="resposta1" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Essa é uma pergunta que depende muito do local para onde está indo e da experiência que você deseja.
+                            Mas uma informação é precisa, não vá em nenhuma local em época de chuvas. 
+                        </div>
+                    </div>
+                    <!-- Pergunta 2 -->
+                    <div class="accordion-item mb-2">
+                        <button class="accordion-button" data-bs-toggle="collapse"
+                        data-bs-target="#resposta2">
+                            Quantos dias seria suficientes para conhecer bem um país?
+                        </button>
+                    </div>
+                    <div id="resposta2" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Isso depende muito da quantidade de lugares que deseja visitar.
+                        </div>
+                    </div>
+                    <!-- Pergunta 3 -->
+                    <div class="accordion-item">
+                        <button class="accordion-button" data-bs-toggle="collapse"
+                        data-bs-target="#resposta3">
+                            Como devo fazer a troca de câmbio?
+                        </button>
+                    </div>
+                    <div id="resposta3" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Utilize o cartão Wise. Ele é gratuito e multi-moedas.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Fim do Accordion -->
+        </div> <!-- Final da div para auteracao do menu com scroll -->
+        <footer class="mt-3">
+            <p class="pb-2 pt-2 mb-4">
+                Página construída por Diego Soares <br>
+                Construída utilizando BootStrap. <br>
+                <br>
+                <a href="#">Link do código no Github</a>
+            </p>
+        </footer>
+    </div> <!-- Fim do container -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
